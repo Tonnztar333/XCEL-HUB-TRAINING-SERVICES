@@ -1,15 +1,15 @@
 :root {
-  --bg: #eef6ee;
+  --bg: #f0f8f0;
   --surface: #ffffff;
-  --surface-soft: #f6faf5;
-  --surface-strong: #e7f2e6;
-  --text: #152718;
-  --muted: #566856;
-  --green: #317a3e;
-  --green-dark: #1d4d2a;
-  --accent: #7fbe53;
-  --shadow: 0 24px 48px rgba(19, 64, 31, 0.12);
-  --radius: 28px;
+  --surface-soft: #f8fdf8;
+  --surface-strong: #e8f5e8;
+  --text: #1a2e1a;
+  --muted: #5a6b5a;
+  --green: #2e8b57;
+  --green-dark: #1e5b3a;
+  --accent: #4ade80;
+  --shadow: 0 20px 40px rgba(30, 139, 87, 0.1);
+  --radius: 16px;
 }
 
 * {
@@ -22,10 +22,11 @@ html {
 
 body {
   margin: 0;
-  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   color: var(--text);
-  background: radial-gradient(circle at top left, rgba(129, 188, 115, 0.14), transparent 28%), var(--bg);
-  line-height: 1.7;
+  background: radial-gradient(circle at top left, rgba(46, 139, 87, 0.08), transparent 30%), var(--bg);
+  line-height: 1.6;
+  font-size: 1rem;
 }
 
 img {
@@ -37,6 +38,11 @@ button,
 input,
 a {
   font: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 button {
@@ -62,7 +68,7 @@ button {
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
-  padding: 1rem 0;
+  padding: 1rem 0 1rem 0.5rem;
 }
 
 .brand,
@@ -114,7 +120,7 @@ button {
 }
 
 .section {
-  padding: clamp(4rem, 4vw, 6rem) 0;
+  padding: clamp(5rem, 6vw, 7rem) 0;
 }
 
 .hero {
@@ -152,18 +158,19 @@ button {
 }
 
 .hero h1 {
-  margin: 0;
-  font-size: clamp(3rem, 5vw, 4.5rem);
-  line-height: 1.02;
-  letter-spacing: -0.04em;
+  margin: 0 0 1.5rem;
+  font-size: clamp(2.5rem, 4vw, 3.5rem);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  max-width: 100%;
 }
 
 .hero-copy {
-  margin: 1.75rem auto 2.5rem;
-  max-width: 44rem;
-  color: rgba(235, 247, 234, 0.92);
-  font-size: 1.08rem;
-  line-height: 1.8;
+  margin: 1.5rem auto 2.5rem;
+  max-width: 48rem;
+  color: rgba(235, 247, 234, 0.95);
+  font-size: 1.125rem;
+  line-height: 1.7;
 }
 
 .btn {
@@ -171,38 +178,41 @@ button {
   align-items: center;
   justify-content: center;
   border: none;
-  border-radius: 999px;
-  padding: 1rem 1.9rem;
-  transition: transform 0.24s ease, box-shadow 0.24s ease, background-color 0.24s ease;
+  border-radius: 12px;
+  padding: 0.875rem 2rem;
+  transition: all 0.3s ease;
   text-decoration: none;
   font-weight: 600;
+  font-size: 1rem;
+  box-shadow: 0 4px 12px rgba(46, 139, 87, 0.15);
 }
 
 .btn-primary {
   color: white;
   background: linear-gradient(135deg, var(--green), var(--accent));
-  box-shadow: 0 18px 32px rgba(28, 82, 40, 0.24);
+  box-shadow: 0 6px 20px rgba(46, 139, 87, 0.25);
 }
 
 .btn-secondary {
   color: white;
   background: var(--green-dark);
+  box-shadow: 0 4px 12px rgba(30, 91, 58, 0.2);
 }
 
 .btn:hover,
 .btn:focus-visible {
-  transform: translateY(-2px);
-  box-shadow: 0 22px 36px rgba(25, 84, 37, 0.3);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(46, 139, 87, 0.3);
 }
 
 .btn-primary:hover,
 .btn-primary:focus-visible {
-  background: linear-gradient(135deg, #3a8f4d, #88c659);
+  background: linear-gradient(135deg, #3a9d6a, #5ae68a);
 }
 
 .btn-secondary:hover,
 .btn-secondary:focus-visible {
-  background: #234d27;
+  background: #256b42;
 }
 
 .split-grid {
@@ -227,13 +237,26 @@ button {
 
 .section-copy h2,
 .trainer-copy h2 {
-  font-size: clamp(2rem, 2.5vw, 3rem);
-  margin: 0 0 1rem;
+  font-size: clamp(2.25rem, 3vw, 3.25rem);
+  margin: 0 0 1.25rem;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
 }
 
 .section-copy p,
 .trainer-copy p {
   color: var(--muted);
+  line-height: 1.7;
+}
+
+.trainer-copy p strong {
+  font-weight: 700;
+  color: var(--green-dark);
+}
+
+.trainer-copy p em {
+  font-style: italic;
+  color: var(--text);
 }
 
 .feature-list {
@@ -292,9 +315,14 @@ button {
 .stat-card {
   background: var(--surface-strong);
   border-radius: var(--radius);
-  padding: 1.75rem;
+  padding: 2rem;
   text-align: center;
-  box-shadow: 0 14px 24px rgba(15, 52, 21, 0.08);
+  box-shadow: 0 6px 16px rgba(46, 139, 87, 0.06);
+  transition: transform 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-2px);
 }
 
 .stat-value {
@@ -335,12 +363,17 @@ button {
 .info-card {
   display: grid;
   grid-template-columns: auto 1fr;
-  gap: 1rem;
+  gap: 1.25rem;
   background: var(--surface-strong);
-  border-radius: 1.5rem;
-  padding: 1.5rem;
-  margin-bottom: 1.25rem;
-  box-shadow: 0 18px 24px rgba(21, 71, 32, 0.05);
+  border-radius: var(--radius);
+  padding: 1.75rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 6px 16px rgba(46, 139, 87, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.info-card:hover {
+  transform: translateY(-2px);
 }
 
 .info-card:last-child {
@@ -390,18 +423,18 @@ button {
 
 .course-card {
   background: var(--surface);
-  border-radius: 1.9rem;
-  padding: 1.85rem;
-  box-shadow: 0 18px 35px rgba(25, 82, 40, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
-  border: 1px solid transparent;
+  border-radius: var(--radius);
+  padding: 2rem;
+  box-shadow: 0 8px 24px rgba(46, 139, 87, 0.08);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(46, 139, 87, 0.05);
 }
 
 .course-card:hover,
 .course-card:focus-within {
-  transform: translateY(-5px);
-  box-shadow: 0 26px 48px rgba(25, 82, 40, 0.16);
-  border-color: rgba(113, 179, 102, 0.2);
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(46, 139, 87, 0.15);
+  border-color: rgba(46, 139, 87, 0.1);
 }
 
 .card-icon {
@@ -457,62 +490,79 @@ button {
 }
 
 .site-footer {
-  background: #163820;
-  color: #f0f7ef;
-  padding: 3.2rem 0 2rem;
+  background: #1a3d2a;
+  color: #f0f9f0;
+  padding: 4rem 0 2.5rem;
 }
 
 .footer-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 2rem;
+  grid-template-columns: 1.5fr 1fr 1fr;
+  gap: 3rem;
   align-items: flex-start;
 }
 
 .site-footer h3 {
   margin-top: 0;
-  color: #f6f8f3;
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+  font-size: 1.25rem;
 }
 
 .site-footer p,
 .site-footer a {
-  color: rgba(244, 250, 240, 0.85);
+  color: rgba(240, 249, 240, 0.9);
+  line-height: 1.6;
+  margin-bottom: 0.75rem;
 }
 
 .site-footer a:hover,
 .site-footer a:focus-visible {
-  color: white;
+  color: var(--accent);
 }
 
 .newsletter-form {
-  display: grid;
-  gap: 1rem;
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
 }
 
 .newsletter-form input {
-  width: 100%;
-  padding: 1rem 1.2rem;
-  border-radius: 999px;
-  border: 1px solid rgba(255, 255, 255, 0.22);
-  background: rgba(255, 255, 255, 0.11);
+  flex: 1;
+  padding: 0.875rem 1.25rem;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.1);
   color: white;
+  font-size: 1rem;
+  transition: all 0.3s ease;
 }
 
 .newsletter-form input:focus {
   outline: none;
-  border-color: rgba(212, 243, 199, 0.8);
-  background: rgba(255, 255, 255, 0.16);
+  border-color: var(--accent);
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0 0 3px rgba(74, 222, 128, 0.1);
 }
 
 .newsletter-form input::placeholder {
-  color: rgba(255, 255, 255, 0.72);
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.newsletter-form .btn {
+  padding: 0.875rem 1.5rem;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  white-space: nowrap;
 }
 
 .footer-bottom {
-  margin-top: 2rem;
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
   text-align: center;
-  color: rgba(255, 255, 255, 0.64);
-  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.9rem;
 }
 
 .visually-hidden {
@@ -542,6 +592,10 @@ button {
     padding: 0 1rem;
   }
 
+  .hero h1 {
+    font-size: clamp(2rem, 6vw, 2.8rem);
+  }
+
   .cta-panel {
     flex-direction: column;
     text-align: center;
@@ -560,11 +614,12 @@ button {
   }
 
   .hero h1 {
-    font-size: 2.4rem;
+    font-size: 2rem;
+    line-height: 1.2;
   }
 
   .section {
-    padding: 3rem 0;
+    padding: 4rem 0;
   }
 
   .btn {
@@ -572,6 +627,15 @@ button {
   }
 
   .course-card {
-    padding: 1.5rem;
+    padding: 1.75rem;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
   }
 }
