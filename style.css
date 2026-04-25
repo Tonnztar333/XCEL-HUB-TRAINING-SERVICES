@@ -83,9 +83,13 @@ button {
 }
 
 .brand-logo {
-  height: 2.4rem;
+  height: 3rem;
   width: auto;
   object-fit: contain;
+}
+
+.footer-brand .brand-logo {
+  height: 3.5rem;
 }
 
 .brand-mark {
@@ -159,7 +163,7 @@ button {
 
 .hero h1 {
   margin: 0 0 1.5rem;
-  font-size: clamp(2.5rem, 4vw, 3.5rem);
+  font-size: clamp(2.2rem, 3.5vw, 3rem);
   line-height: 1.1;
   letter-spacing: -0.02em;
   max-width: 100%;
@@ -281,6 +285,8 @@ button {
 
 .rounded-image {
   width: 100%;
+  max-width: 400px;
+  height: auto;
   border-radius: 1.85rem;
   box-shadow: var(--shadow);
 }
