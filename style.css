@@ -76,6 +76,12 @@ button {
   letter-spacing: -0.02em;
 }
 
+.brand-logo {
+  height: 2.4rem;
+  width: auto;
+  object-fit: contain;
+}
+
 .brand-mark {
   width: 2.4rem;
   height: 2.4rem;
