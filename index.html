@@ -3,21 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Xcel Hub Training Services</title>
+  <title>Xcel Hub: Empowering Skills Through Training</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <a href="#home" class="brand">
-        <img src="images/3d horizontal.png " alt="Xcel Hub Logo" class="brand-logo">
+      <a href="#home" class="brand" aria-label="Xcel Hub home">
+        <img src="images/3d horizontal.png" alt="Xcel Hub Training Services logo" class="brand-logo">
       </a>
       <nav aria-label="Primary navigation">
         <ul class="nav-list">
+          <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#clients">Clients</a></li>
-          <li><a href="#advantage">Advantage</a></li>
           <li><a href="#courses">Courses</a></li>
+          <li><a href="#schedules">Schedules</a></li>
+          <li><a href="#team">Team</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
@@ -26,107 +27,59 @@
 
   <main>
     <section id="home" class="hero">
-      <div class="hero-overlay"></div>
-      <div class="container hero-content">
-        <p class="eyebrow">Future-ready training</p>
-        <h1>Mabuhay! <br>Welcome to Xcel Hub Training Services</h1>
-        <p class="hero-copy">Gain practical skills in Excel, Google 
-            Sheets, and workplace technologies through guided training designed to prepare you for 
-            real-world tasks and career growth.</p>
-        <a href="#about" class="btn btn-primary">Explore our programs</a>
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <p class="eyebrow">Xcel Hub: Empowering Skills Through Training</p>
+          <h1>Mabuhay! Welcome to Xcel Hub Training Services</h1>
+          <p class="hero-subtitle">Empowering learners through practical, beginner-friendly digital skills training.</p>
+          <p class="hero-copy">Learn Microsoft Excel, Google Sheets, computer literacy, data reporting, and workplace productivity skills through hands-on training designed for beginners, professionals, and organizations.</p>
+          <div class="button-row">
+            <a href="#schedules" class="btn btn-primary">View Available Schedules</a>
+            <a href="#contact" class="btn btn-secondary">Send Inquiry</a>
+          </div>
+        </div>
+        <div class="hero-media" aria-label="Training photos">
+          <img src="images/corpo_training.jpg" alt="Learners attending a hands-on training session">
+        </div>
       </div>
     </section>
 
     <section id="about" class="section about-section">
-      <div class="container split-grid">
-        <div class="section-copy">
-          <p class="eyebrow">About Xcel Hub</p>
-          <h2>Discover Xcel Hub Training Services</h2>
-          <p>Located in Cubao, Quezon City, Xcel Hub is a premier training center dedicated to fostering digital literacy and developing workforce-ready 
-            technology competencies. Since our founding in 2018, we've supported thousands of learners, from entry-level professionals to 
-            career-switchers—through comprehensive training in Excel, Google Sheets, data analytics, and workplace productivity tools.</p>
-          <p>Our commitment to personalized education sets us apart. With intimate class sizes capped at six participants, each learner receives
-             individualized attention and customized guidance. We offer multiple learning pathways including flexible scheduling, hybrid delivery options, 
-             and industry-recognized certifications through our Certiport Testing Center partnership—empowering you to thrive in an increasingly digital-driven 
-             professional environment.</p>
-        </div>
-        <div class="about-image-card">
-          <img src="images/corpo_training.jpg" alt="Training session in a classroom" class="rounded-image">
-        </div>
-      </div>
-    </section>
-
-    <section id="clients" class="section clients-section">
       <div class="container">
-        <div class="stats-grid">
-          <div class="stat-card">
-            <span class="stat-value">30k+</span>
-            <p>trained learners</p>
+        <div class="section-header left">
+          <p class="eyebrow">About</p>
+          <h2>About Xcel Hub Training Services</h2>
+        </div>
+        <div class="about-grid">
+          <div class="section-copy">
+            <p>Xcel Hub Training Services is a professional training and tutorial center based in Cubao, Quezon City. Since 2018, it has been committed to helping beginners, freelancers, jobseekers, professionals, and organizations build practical digital literacy and job-ready computer skills. The training center provides hands-on learning in Microsoft Excel, Google Sheets, Data Management, Data Analysis, and other essential computer skills.</p>
+            <p><strong>Location:</strong> Unit 2F Saint Martin Building, West Point Street, Cubao, Quezon City, Metro Manila 1102.</p>
+            <p>Xcel Hub offers both online and face-to-face learning options, making training more flexible and accessible for different learners.</p>
           </div>
-          <div class="stat-card">
-            <span class="stat-value">75+</span>
-            <p>cities served</p>
-          </div>
-          <div class="stat-card">
-            <span class="stat-value">300+</span>
-            <p>partner companies</p>
+          <div class="about-photo">
+            <img src="images/corpo_wcertificates.jpg" alt="Xcel Hub learners with training certificates">
           </div>
         </div>
-        <div class="client-logos">
-          <img src="images/unilever_logo.jpg" alt="Unilever">
-          <img src="images/dswd_logo.jpg" alt="DSWD">
-          <img src="images/philhealth_logo.jpg" alt="PhilHealth">
-          <img src="images/gma_logo.jpg" alt="GMA">
-          <img src="images/dti_logo.jpg" alt="DTI">
-        </div>
-      </div>
-    </section>
 
-    <section id="advantage" class="section advantage-section">
-      <div class="container split-grid reverse-on-mobile">
-        <div class="advantage-cards">
-          <p class="eyebrow">The Xcel Hub advantage</p>
-          <h2>Why learners choose our training</h2>
-          <div class="info-card">
-            <div class="icon">✅</div>
-            <div>
-              <h3>Hands-on learning</h3>
-              <p>Engaging workshops and real-world exercises that stick.</p>
-            </div>
-          </div>
-          <div class="info-card">
-            <div class="icon">⚡</div>
-            <div>
-              <h3>Practical outcomes</h3>
-              <p>Skills you can apply immediately in work and study.</p>
-            </div>
-          </div>
-          <div class="info-card">
-            <div class="icon">💪🏼</div>
-            <div>
-              <h3>Flexible format</h3>
-              <p>Online and in-person options designed around your schedule.</p>
-            </div>
-          </div>
+        <div class="mission-grid" aria-label="Vision and Mission">
+          <article class="info-card">
+            <h3>Vision</h3>
+            <p>To become a trusted and sought-after training partner in Microsoft Excel, Google Sheets, and data reporting by empowering individuals and organizations to become more productive, efficient, and data-driven.</p>
+          </article>
+          <article class="info-card">
+            <h3>Mission</h3>
+            <p>To help individuals and organizations work smarter with data by providing custom-tailored training programs that are aligned with their goals, industry context, and real-world reporting needs. Xcel Hub focuses on building confidence, efficiency, and long-term digital capability among its learners.</p>
+          </article>
         </div>
-        <div class="advantage-image-card">
-          <img src="images/corpo_dilg.jpg" alt="Group learning and collaboration" class="rounded-image">
-        </div>
-      </div>
-    </section>
 
-    <section class="section trainer-section">
-      <div class="container trainer-grid">
-        <div class="trainer-image-card">
-          <img src="images/coach_roxy.jpg" alt="Trainer portrait" class="rounded-image">
-        </div>
-        <div class="trainer-copy">
-          <p class="eyebrow">Meet the head trainer</p>
-          <h2>Supporting learners with expert coaching</h2>
-          <p><strong>Roxanne Llenes</strong> is the <em>Founder and Head Trainer of Xcel Hub Training Services</em>. She leads with
-             years of training experience in Excel, Word, and workplace technology, helping learners gain confidence, 
-             professionalism, and real productivity skills.</p>
-          <a href="#contact" class="btn btn-secondary">View portfolio</a>
+        <div class="goals-block">
+          <h3>Goals and Objectives</h3>
+          <div class="goals-grid">
+            <article class="goal-card">Provide accessible, practical, and flexible digital skills training.</article>
+            <article class="goal-card">Help learners improve their knowledge in computer literacy, Microsoft Excel, Google Sheets, data management, reporting, dashboard creation, and workplace productivity.</article>
+            <article class="goal-card">Make learning less intimidating for beginners through personalized instruction, hands-on activities, and real-life business examples.</article>
+            <article class="goal-card">Help learners build confidence, improve reporting accuracy, reduce work errors, and apply digital tools effectively in actual work settings.</article>
+          </div>
         </div>
       </div>
     </section>
@@ -134,85 +87,204 @@
     <section id="courses" class="section courses-section">
       <div class="container">
         <div class="section-header">
-          <p class="eyebrow">Training categories</p>
-          <h2>Discover the right skills for your journey</h2>
-          <p class="section-copy">Choose a program that fits your goals, whether you're starting from scratch or upgrading your 
-            office skills.</p>
+          <p class="eyebrow">Courses</p>
+          <h2>Beginner-Friendly Training Programs</h2>
+          <p>Choose a course that matches your current skill level and learning goal.</p>
         </div>
-        <div class="grid cards-grid">
+        <div class="cards-grid">
           <article class="course-card">
-            <div class="card-icon">💻</div>
-            <h3>Computer Literacy Level 1</h3>
-            <p>Basics of typing, email, and everyday productivity tools.</p>
+            <h3>Computer Literacy</h3>
+            <p>For zero-knowledge learners who want to learn basic computer navigation, typing, email, file handling, and everyday digital skills.</p>
           </article>
           <article class="course-card">
-            <div class="card-icon">📊</div>
-            <h3>Excel for Beginners</h3>
-            <p>Start creating spreadsheets, formulas, and simple reports.</p>
+            <h3>Basic Excel</h3>
+            <p>For beginners who want to learn spreadsheet basics, formulas, formatting, tables, and simple reports.</p>
           </article>
           <article class="course-card">
-            <div class="card-icon">📈</div>
-            <h3>Excel for Daily Users</h3>
-            <p>Build dashboards, pivot tables, and practical business tools.</p>
+            <h3>Advanced Excel</h3>
+            <p>For learners who want to improve their skills in advanced formulas, data cleaning, pivot tables, dashboards, and reporting.</p>
           </article>
           <article class="course-card">
-            <div class="card-icon">🧠</div>
-            <h3>Excel Formulas & AI Tools</h3>
-            <p>Use advanced formulas and modern automation workflows.</p>
+            <h3>Google Sheets</h3>
+            <p>For learners who want to collaborate online, manage data, and create reports using Google Sheets.</p>
           </article>
           <article class="course-card">
-            <div class="card-icon">📄</div>
-            <h3>Google Sheets Mastery</h3>
-            <p>Analyze data, collaborate online, and design smart reports.</p>
+            <h3>Data Management and Reporting</h3>
+            <p>For learners who want to organize, analyze, and present data more clearly for school or workplace use.</p>
           </article>
           <article class="course-card">
-            <div class="card-icon">🎯</div>
-            <h3>Professional Productivity</h3>
-            <p>Get ready for workplace success with career-focused skills.</p>
+            <h3>Workplace Productivity</h3>
+            <p>For learners who want to improve office productivity using practical digital tools and workflows.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section cta-section">
-      <div class="container cta-panel">
-        <div>
-          <h2>Ready to sharpen your digital skills?</h2>
-          <p>Join an upcoming class and start improving your productivity today.</p>
+    <section id="schedules" class="section schedules-section">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Schedules</p>
+          <h2>Upcoming Available Slots</h2>
+          <p>Choose your preferred training schedule below. Click a schedule card to send an inquiry.</p>
         </div>
-        <a href="#contact" class="btn btn-primary">Register now</a>
+        <div class="schedule-grid">
+          <button class="schedule-card" type="button" data-course="Basic Excel" data-schedule="May 30-31 | F2F Cubao | Excel Foundation Training">
+            <span class="schedule-date">MAY 30-31</span>
+            <span class="schedule-mode">F2F Cubao</span>
+            <strong>Microsoft Excel for 1st Time Users (Foundation Training)</strong>
+            <span class="schedule-time">9:00 AM - 5:00 PM</span>
+          </button>
+          <button class="schedule-card" type="button" data-course="Computer Literacy" data-schedule="June 4-6 | F2F Cubao | Computer Navigation for Zero Knowledge">
+            <span class="schedule-date">JUNE 4-6</span>
+            <span class="schedule-mode">F2F Cubao</span>
+            <strong>3-Day Computer Navigation Training for Zero Knowledge</strong>
+            <span class="schedule-time">9:00 AM - 5:00 PM</span>
+          </button>
+          <button class="schedule-card" type="button" data-course="Basic Excel" data-schedule="June 11-13 | F2F & Online | Excel Data Entry to Reporting">
+            <span class="schedule-date">JUNE 11-13</span>
+            <span class="schedule-mode">F2F & Online</span>
+            <strong>Microsoft Excel for 1st Time Users (Data Entry to Reporting)</strong>
+            <span class="schedule-time">9:00 AM - 5:00 PM</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="team" class="section team-section">
+      <div class="container">
+        <div class="team-grid">
+          <div class="trainer-image-card">
+            <img src="images/coach_roxy.jpg" alt="Roxanne Llenes, Founder and Head Trainer of Xcel Hub Training Services">
+          </div>
+          <div class="trainer-copy">
+            <p class="eyebrow">Founder and Head Trainer</p>
+            <h2>Roxanne Llenes</h2>
+            <p><strong>Roxanne Llenes</strong> is the Founder and Head Trainer of Xcel Hub Training Services.</p>
+            <p>She leads Xcel Hub with years of training experience in Microsoft Excel, Google Sheets, data reporting, and workplace productivity. Her training approach focuses on patience, hands-on learning, and helping learners gain confidence in using digital tools.</p>
+          </div>
+        </div>
+
+        <div class="staff-block">
+          <div class="section-header">
+            <p class="eyebrow">Staff / Training Support</p>
+            <h2>Support Team</h2>
+          </div>
+          <div class="staff-grid">
+            <article class="staff-card">
+              <h3>Training Facilitators</h3>
+              <p>Assist learners during activities and guide hands-on exercises.</p>
+            </article>
+            <article class="staff-card">
+              <h3>Administrative Support</h3>
+              <p>Helps with inquiries, schedule coordination, and learner concerns.</p>
+            </article>
+            <article class="staff-card">
+              <h3>Digital Marketing Support</h3>
+              <p>Shares training updates and helps learners connect with Xcel Hub online.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <div class="container contact-grid">
+        <div class="contact-details">
+          <p class="eyebrow">Contact</p>
+          <h2>Send an Inquiry / Magtanong tungkol sa Training</h2>
+          <p>May question about schedules, rates, or available slots? Send a simple inquiry and Xcel Hub will get back to you.</p>
+
+          <div class="details-list" aria-label="Contact details">
+            <p><strong>Address:</strong> Unit 2F Saint Martin Building, West Point St., Cubao, Quezon City, Metro Manila 1102</p>
+            <p><strong>Office Hours:</strong> Monday - Saturday | 9:00 AM - 6:00 PM</p>
+            <p><strong>Phone:</strong> 0992-454-7586</p>
+            <p><strong>Email:</strong> <a href="mailto:marketing@xcelhubtrainingservices.com">marketing@xcelhubtrainingservices.com</a></p>
+            <p><strong>Facebook:</strong> <a href="https://www.facebook.com/xcelhubtrainingservices" target="_blank" rel="noopener">https://www.facebook.com/xcelhubtrainingservices</a></p>
+          </div>
+
+          <a class="btn btn-facebook" href="https://www.facebook.com/xcelhubtrainingservices" target="_blank" rel="noopener">Message us on Facebook</a>
+        </div>
+
+        <form class="inquiry-form" id="inquiry-form" action="mailto:marketing@xcelhubtrainingservices.com" method="post" enctype="text/plain">
+          <div class="form-field">
+            <label for="full-name">Full Name / Buong Pangalan</label>
+            <input id="full-name" name="Full Name" type="text" autocomplete="name" required>
+          </div>
+          <div class="form-field">
+            <label for="contact-number">Contact Number / Contact Number</label>
+            <input id="contact-number" name="Contact Number" type="tel" autocomplete="tel" required>
+          </div>
+          <div class="form-field">
+            <label for="email">Email Address / Email</label>
+            <input id="email" name="Email Address" type="email" autocomplete="email" required>
+          </div>
+          <div class="form-field">
+            <label for="interested-course">Interested Course / Course na Interested Ka</label>
+            <select id="interested-course" name="Interested Course" required>
+              <option value="">Select a course</option>
+              <option>Computer Literacy</option>
+              <option>Basic Excel</option>
+              <option>Advanced Excel</option>
+              <option>Google Sheets</option>
+              <option>Data Management and Reporting</option>
+              <option>Workplace Productivity</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <label for="preferred-schedule">Preferred Schedule</label>
+            <select id="preferred-schedule" name="Preferred Schedule" required>
+              <option value="">Select a schedule</option>
+              <option>May 30-31 | F2F Cubao | Excel Foundation Training</option>
+              <option>June 4-6 | F2F Cubao | Computer Navigation for Zero Knowledge</option>
+              <option>June 11-13 | F2F & Online | Excel Data Entry to Reporting</option>
+              <option>Not sure yet / Magtatanong muna</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <label for="message">Message / Mensahe</label>
+            <textarea id="message" name="Message" rows="5" placeholder="Hello po, interested po ako sa training. Pwede po bang magtanong about schedule, rate, and available slots?"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Inquiry</button>
+        </form>
       </div>
     </section>
   </main>
 
-  <footer id="contact" class="site-footer">
-    <div class="container footer-grid">
-      <div>
-        <a href="#home" class="brand footer-brand">
-          <img src="images/3d square.png" alt="Xcel Hub Logo" class="brand-logo">
-        </a>
-        <p>Practical training in Microsoft Office, Excel, Google Sheets, and digital workplace skills.</p>
-      </div>
-      <div>
-        <h3>Contact</h3>
-        <p>Unit 2F Saint Martin Building West Point St. Cubao, Quezon City Metro Manila 1102</p>
-        <p>Monday - Saturday · 9:00 AM - 6:00 PM</p>
-        <p>0992-454-7586</p>
-        <p><a href="mailto:marketing@xcelhubtrainingservices.com">marketing@xcelhubtrainingservices.com</a></p>
-      </div>
-      <div>
-        <h3>Newsletter</h3>
-        <p>Sign up to receive class updates and study tips.</p>
-        <form class="newsletter-form">
-          <label for="footer-email" class="visually-hidden">Email address</label>
-          <input id="footer-email" type="email" placeholder="Enter your email" aria-label="Newsletter email">
-          <button type="submit" class="btn btn-secondary">Subscribe</button>
-        </form>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>© 2026 Xcel Hub Training Services · Privacy Policy · Terms of Use</p>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a href="#home" class="brand footer-brand" aria-label="Xcel Hub home">
+        <img src="images/3d square.png" alt="Xcel Hub Training Services logo" class="brand-logo">
+      </a>
+      <p>&copy; 2026 Xcel Hub: Empowering Skills Through Training &middot; Website Prototype for School Project.</p>
     </div>
   </footer>
+
+  <script>
+    const scheduleCards = document.querySelectorAll('.schedule-card');
+    const courseSelect = document.querySelector('#interested-course');
+    const scheduleSelect = document.querySelector('#preferred-schedule');
+    const messageField = document.querySelector('#message');
+
+    scheduleCards.forEach((card) => {
+      card.addEventListener('click', () => {
+        const course = card.dataset.course;
+        const schedule = card.dataset.schedule;
+
+        if (courseSelect) {
+          courseSelect.value = course;
+        }
+
+        if (scheduleSelect) {
+          scheduleSelect.value = schedule;
+        }
+
+        if (messageField && !messageField.value.trim()) {
+          messageField.value = 'Hello po, interested po ako sa training. Pwede po bang magtanong about schedule, rate, and available slots?';
+        }
+
+        document.querySelector('#contact').scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    });
+  </script>
 </body>
 </html>
